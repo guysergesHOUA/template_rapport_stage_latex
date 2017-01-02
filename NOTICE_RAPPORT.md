@@ -105,7 +105,7 @@ Les coefficients sont en commentaire et non visibles via cette plateforme, à
 moins que...
 
 * Résume
-[//]: <> (Coeff 2)
+[//]: # (Coeff 2)
 * Qualité doc / Présentation
 [//]: <> (Coeff 1)
 * Qualité doc / Ortho. Grammaire
