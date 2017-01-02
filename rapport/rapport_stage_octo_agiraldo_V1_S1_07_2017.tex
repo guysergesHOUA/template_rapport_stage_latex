@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template pour Octo
+%
+% Créé par Alonso Giraldo
+%
+%  Toutes les images doivent se trouver
+%  dans un sous-dossier pictures
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%  DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}            % Gestion français et anglais
+\usepackage[pdftex,colorlinks]{hyperref}        % Document interactif avec liens
+\usepackage{listings}                           % Blocs de code avec \lstset
+\usepackage{microtype}                          % Améliore la typographie
+\usepackage[explicit]{titlesec}                 % Format des titres et chapitres
+\usepackage{setspace}                           % Change le linespacing
+\usepackage{graphicx}
+\usepackage{fancyhdr}                           % Fancy page style
+\usepackage{etoolbox}                           % Utilisée pour table matière
+\usepackage{lastpage}                           % Reférences sur dernière page
+\usepackage{index}
+\usepackage{libertine}
+\usepackage{mdframed}
+\usepackage{colortbl}
+\usepackage{geometry}
+\usepackage{acronym}
+\usepackage{manfnt}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{enumitem}
+\usepackage{afterpage}
+\usepackage[parfill]{parskip}
+\usepackage{listings}
+\usepackage{array}
+
+\usepackage[acronyms,style=super,order=word]{glossaries}
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\usepackage{csquotes}                           % Utilisé pas biblatex
+
+%% Configuration des acronymes
+\setacronymstyle{long-sc-short}
+\loadglsentries{includes/acronyms.tex}
+\loadglsentries{includes/glossary.tex}
+
+\makenoidxglossaries
+% \makeindex              % Décommenter au cas ou makenoidxglossaries ne trie
+% pas les entrées, dans le cas contraire supprimer
+
+% ===============================================
+%   Variables pour ce document
+% ===============================================
+
+%% Ce fichier contient les commandes et les configurations du document
+\input{config}
+
+%%%%    version du document, utilisée en 1ère de couverture et dans les en-têtes
+\newcommand{\version}{1.0}
+%%%%    titre
+\renewcommand{\title}{Gestion des identités dans un SI existant}
+%%%%    sous titre
+\newcommand{\subtitle}{Rapport - Stage fin d'année - Alonso GIRALDO}
+%%%%    référence du document
+\newcommand{\reference}{S01}
+
+%% Configuration de la bibliographie
+\bibliography{includes/bibliography}
+
+
+%-------------------------------------------------------------------------------
+%  DEBUT DOCUMENT
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+%% Les premières pages seront numérotées en chiffres romains
+\pagenumbering{Roman}
+
+% Page de garde
+\afterpage{\blankpage}
+\input{includes/first}
+
+%%Affichage des listes et tables.
+\tableofcontents
+\newpage
+
+%\listoftables      % décommenter pour avoir la liste des tables
+%\listofscripts     % commenter pour ne pas avoir la liste des scripts
+
+%%permet de revenir à la numérotation arabe
+\pagenumbering{arabic}
+
+% ===============================================
+%   Début effectif du document
+% ===============================================
+
+\input{includes/remerciements}
+% Partie introductive
+\input{includes/resume}
+
+\input{includes/introduction}
+
+\listoffigures
+\clearpage
+
+\printnoidxglossaries
+\printbibliography
+
+\clearpage
+\tail
+\end{document}

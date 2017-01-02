@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="kpd9KjVOBst">
+  <start-date>2016-12-28T07:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="45000"/>
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="45000"/>
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="45000"/>
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="45000"/>
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="45000"/>
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r4"/>
+  </resource>
+  <resource id="r1">
+    <name>Alonso</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>Alonso_loisir</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="72000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="72000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="72000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="72000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="72000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t13"/>
+  </task>
+  <task id="t1">
+    <title>Rapport de stage</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2017-07-10T06:15:00.000Z</end-constraint-date>
+    <child-task idref="t11"/>
+    <child-task idref="t59"/>
+    <child-task idref="t60"/>
+    <child-task idref="t61"/>
+    <child-task idref="t56"/>
+    <child-task idref="t10"/>
+    <child-task idref="t58"/>
+    <child-task idref="t64"/>
+    <child-task idref="t65"/>
+    <child-task idref="t66"/>
+    <child-task idref="t62"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2017-07-10T06:15:00.000Z</end-no-later-than>
+  </task>
+  <task id="t10">
+    <title>Page résumé</title>
+    <leveled-start>2017-04-27T18:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <min-estimate>14400</min-estimate>
+    <max-estimate>43200</max-estimate>
+    <start-constraint-date>2016-12-30T16:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t56"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-30T16:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t11">
+    <title>Introduction </title>
+    <leveled-start>2016-12-30T19:00:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <effort-done>7200</effort-done>
+    <start-constraint-date>2016-12-30T16:30:00.000Z</start-constraint-date>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-30T16:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>Stage</title>
+    <type>group</type>
+    <start-constraint-date>2017-01-23T07:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2017-07-22T22:00:00.000Z</end-constraint-date>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+    <start-no-earlier-than>2017-01-23T07:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2017-07-22T22:00:00.000Z</end-no-later-than>
+  </task>
+  <task id="t17">
+    <title>Configuration la station de travail</title>
+    <leveled-start>2017-01-23T07:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <min-estimate>14400</min-estimate>
+    <max-estimate>43200</max-estimate>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t18">
+    <title>Pré-étude</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2017-01-31T23:00:00.000Z</end-constraint-date>
+    <child-task idref="t39"/>
+    <child-task idref="t50"/>
+    <child-task idref="t73"/>
+    <child-task idref="t81"/>
+    <prerequisite-task idref="t17"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2017-01-31T23:00:00.000Z</end-no-later-than>
+  </task>
+  <task id="t19">
+    <title>Etude des briques principales 
+</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t41"/>
+    <child-task idref="t42"/>
+    <child-task idref="t43"/>
+    <child-task idref="t44"/>
+    <child-task idref="t45"/>
+    <prerequisite-task idref="t18"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t20">
+    <title>Conception et réalisation d’un serveur de fédération d’identité qui réponde au besoin 
+</title>
+    <type>group</type>
+    <start-constraint-date>2017-01-18T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t51"/>
+    <child-task idref="t53"/>
+    <child-task idref="t52"/>
+    <child-task idref="t84"/>
+    <child-task idref="t83"/>
+    <child-task idref="t80"/>
+    <child-task idref="t75"/>
+    <prerequisite-task idref="t19"/>
+    <start-no-earlier-than>2017-01-18T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t21">
+    <title>bilan 
+</title>
+    <type>group</type>
+    <start-constraint-date>2017-02-06T09:30:00.000Z</start-constraint-date>
+    <child-task idref="t28"/>
+    <child-task idref="t24"/>
+    <child-task idref="t23"/>
+    <child-task idref="t31"/>
+    <child-task idref="t26"/>
+    <prerequisite-task idref="t20"/>
+    <start-no-earlier-than>2017-02-06T09:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t23">
+    <title>Article de blog</title>
+    <leveled-start>2017-03-29T06:30:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <min-estimate>57600</min-estimate>
+    <max-estimate>172800</max-estimate>
+    <start-constraint-date>2017-02-14T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t24"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-02-14T16:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t24">
+    <title>Fiches autoportantes sur les protocoles</title>
+    <leveled-start>2017-03-23T09:30:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <min-estimate>57600</min-estimate>
+    <max-estimate>172800</max-estimate>
+    <start-constraint-date>2017-02-09T08:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-02-09T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t26">
+    <title>Présentation des résultats aux Octos</title>
+    <type>milestone</type>
+    <leveled-start>2017-07-04T12:30:00.000Z</leveled-start>
+    <start-constraint-date>2017-07-04T12:30:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t31"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-07-04T12:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t28">
+    <title>Grille de choix entre les différentes approches étudiées</title>
+    <leveled-start>2017-03-20T11:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <min-estimate>43200</min-estimate>
+    <max-estimate>129600</max-estimate>
+    <start-constraint-date>2017-02-06T09:30:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-02-06T09:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t31">
+    <title>Préparation présentation Octo</title>
+    <leveled-start>2017-06-28T13:00:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <min-estimate>57600</min-estimate>
+    <max-estimate>172800</max-estimate>
+    <start-constraint-date>2017-06-28T13:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-06-28T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t39">
+    <title>Compréhension du besoin</title>
+    <leveled-start>2017-01-23T16:30:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <min-estimate>28800</min-estimate>
+    <max-estimate>86400</max-estimate>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2017-07-22T22:00:00.000Z</end-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2017-07-22T22:00:00.000Z</end-no-later-than>
+  </task>
+  <task id="t41">
+    <title>OAuth2</title>
+    <leveled-start>2017-01-27T09:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t42">
+    <title>SAML</title>
+    <leveled-start>2017-02-01T07:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <min-estimate>43200</min-estimate>
+    <max-estimate>129600</max-estimate>
+    <start-constraint-date>2017-01-02T15:30:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-01-02T15:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t43">
+    <title>Kerberos</title>
+    <leveled-start>2017-02-03T16:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <min-estimate>43200</min-estimate>
+    <max-estimate>129600</max-estimate>
+    <start-constraint-date>2017-01-05T14:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-01-05T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t44">
+    <title>FacebookConnect</title>
+    <leveled-start>2017-02-08T14:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <min-estimate>43200</min-estimate>
+    <max-estimate>129600</max-estimate>
+    <start-constraint-date>2017-01-10T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-01-10T11:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t45">
+    <title>OpenLDAP</title>
+    <leveled-start>2017-02-13T11:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <min-estimate>43200</min-estimate>
+    <max-estimate>129600</max-estimate>
+    <start-constraint-date>2017-01-13T09:30:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-01-13T09:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t50">
+    <title>Détermination du périmètre du projet</title>
+    <leveled-start>2017-01-25T15:30:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t51">
+    <title>Rédaction du cas d’étude</title>
+    <type>group</type>
+    <start-constraint-date>2017-01-18T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t76"/>
+    <child-task idref="t78"/>
+    <child-task idref="t79"/>
+    <child-task idref="t82"/>
+    <start-no-earlier-than>2017-01-18T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t52">
+    <title>Correction après retours</title>
+    <leveled-start>2017-03-06T08:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2017-02-03T10:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t53"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-02-03T10:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t53">
+    <title>Développement</title>
+    <type>group</type>
+    <start-constraint-date>2017-01-20T16:30:00.000Z</start-constraint-date>
+    <child-task idref="t85"/>
+    <child-task idref="t88"/>
+    <child-task idref="t89"/>
+    <prerequisite-task idref="t51"/>
+    <start-no-earlier-than>2017-01-20T16:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t56">
+    <title>Conclusion</title>
+    <leveled-start>2017-04-21T18:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t61"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t58">
+    <title>Réecriture</title>
+    <leveled-start>2017-05-03T18:00:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t10"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t59">
+    <title>Aspects organisationnels</title>
+    <leveled-start>2017-01-27T19:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t18"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t60">
+    <title>Aspects scientifiques</title>
+    <leveled-start>2017-02-24T19:00:00.000Z</leveled-start>
+    <effort>201600</effort>
+    <start-constraint-date>2017-01-24T11:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2017-01-24T11:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t61">
+    <title>Bilan</title>
+    <leveled-start>2017-04-05T18:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t60"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t62">
+    <title>Annexes</title>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t60"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t64">
+    <title>Première correction</title>
+    <leveled-start>2017-05-25T18:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t58"/>
+    <prerequisite-task idref="t62"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t65">
+    <title>Seconde correction</title>
+    <leveled-start>2017-06-06T18:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t64"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t66">
+    <title>Abstract anglais</title>
+    <leveled-start>2017-06-16T18:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t65"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t73">
+    <title>Réevaluation du gantt</title>
+    <leveled-start>2017-01-26T15:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t50"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t75">
+    <title>Documentation</title>
+    <leveled-start>2017-03-15T14:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t51"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>Sujet</title>
+    <leveled-start>2017-02-16T10:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t78">
+    <title>Feature list</title>
+    <leveled-start>2017-02-17T09:30:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t79">
+    <title>Périmètre</title>
+    <leveled-start>2017-02-17T15:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t78"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t80">
+    <title>Validation</title>
+    <type>milestone</type>
+    <leveled-start>2017-01-30T14:00:00.000Z</leveled-start>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t81">
+    <title>Validation</title>
+    <type>milestone</type>
+    <leveled-start>2017-01-23T16:30:00.000Z</leveled-start>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t82">
+    <title>Critères d’évaluation</title>
+    <leveled-start>2017-02-20T09:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t78"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t83">
+    <title>Analyse sécurité</title>
+    <leveled-start>2017-03-10T15:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t52"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t84">
+    <title>Tests</title>
+    <leveled-start>2017-03-08T16:30:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t52"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t85">
+    <title>serveur</title>
+    <leveled-start>2017-02-20T14:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t88">
+    <title>client</title>
+    <leveled-start>2017-02-23T11:30:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t89">
+    <title>Intégration LDAP</title>
+    <leveled-start>2017-02-28T10:00:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <start-constraint-date>2016-12-29T07:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-12-29T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

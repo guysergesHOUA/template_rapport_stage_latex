@@ -1,0 +1,95 @@
+% ===============================================
+%   Format chapitres
+% ===============================================
+
+\titleformat{\chapter}[frame]
+{\normalfont}
+{\filleft
+\enspace \MakeUppercase{\chaptertitlename} \thechapter\enspace}
+{3ex}
+{\LARGE\bfseries\filright#1}
+\titlespacing{\chapter}{0pt}{*-6}{*6}
+
+% ===============================================
+%   Footer chapitres
+% ===============================================
+
+\setlength{\fboxrule}{0.5 mm}
+\setlength{\fboxsep}{1 mm}
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyhead[C]{}
+\fancyfoot[L]{Octo Technology}
+\fancyfoot[R]{page \thepage{}}
+\fancyfoot[C]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}}
+
+
+% ===============================================
+%   Header/Footer page classique
+% ===============================================
+
+\newcommand{\head}{%
+  \lhead{\textbf{\title{} - v\version}}%
+  \chead{}%{\secret \vspace*{1cm} }%
+  \rhead{\today}
+  \lfoot{Octo Technology}
+  \cfoot{\vspace*{0.5cm}}
+  \rfoot{page \thepage}
+
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\footrulewidth}{1pt}
+}
+\head
+
+% ===============================================
+%   Commandes
+% ===============================================
+
+%%Fin de document
+\newcommand{\tail}{%
+  \vfill%
+    \begin{center}%
+      \textbf{--- FIN DU DOCUMENT ---}%
+    \end{center}%
+\vfill%
+}
+
+%%Page vide
+\newcommand\blankpage{%
+  \null
+  \thispagestyle{empty}%
+  \addtocounter{page}{-1}%
+  \newpage}
+
+\setlength{\parindent}{1.5em}
+
+\graphicspath{{pictures/}}
+
+\geometry{paper=a4paper,
+          includeall,
+          headheight=2cm,
+          headsep=0.9cm,
+          vmargin=2cm,
+          hmargin=3cm,
+          marginparsep=0cm,
+          marginparwidth=0cm,
+%          showframe=true,% affiche des cadres pour visualiser les marges
+}
+
+%%%%%%%% Propriétés pdf %%%%%%%%%%%
+\hypersetup{
+bookmarks=true,
+unicode= yes,
+pdftitle={},
+pdfauthor={OCTO},
+pdfsubject={},
+pdfkeywords={},
+colorlinks=true,
+linkcolor=black,
+citecolor=black,
+filecolor=black,
+urlcolor = black
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
