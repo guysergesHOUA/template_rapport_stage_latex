@@ -73,18 +73,18 @@ Sont utilisés :
 * Bibtex    : Pour la bibliographie
 * Biblatex  : Pour les citations en footnote
 
-**config.tex**
+* **config.tex**
     * Configure le style des chapitres, headers, footers
     * Configure lslisting pour embarquer du code
     * Propose la commande `\tail` pour annonce la fin du document
     * Propose la commande `\blankpage` pour sauter une page blanche
-**includes/bibliography.tex**
+* **includes/bibliography.tex**
     * Contient toutes les citations bibliographiques
     * Utiliser `\autocite{element}`
-**includes/glossary.tex**
+* **includes/glossary.tex**
     * `\gls` pour utiliser un élément du glossaire ou d'abréviation
     * `\glspl`sa forme plurielle, mais doit être précisé lors de sa création
     * `\Gls` met une majuscule sur la première lettre
-**includes/acronyms.tex**
+* **includes/acronyms.tex**
     * Acronymes
     * `\printglossaries` affiche le glossaire puis les acronymes
