@@ -107,19 +107,19 @@ moins que...
 * Résume
 [//]: # (Coeff 2)
 * Qualité doc / Présentation
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 * Qualité doc / Ortho. Grammaire
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 * Respect du plan
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 * Aspects organisationnels
-[//]: <> (Coeff 3)
+[//]: # (Coeff 3)
 * Contenu scientifique et technique
-[//]: <> (Coeff 4)
+[//]: # (Coeff 4)
 * Analyse et conclusion
-[//]: <> (Coeff 2)
+[//]: # (Coeff 2)
 * Index / Gloss / Bibli / Annexes
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 
 ## Tasks list
 

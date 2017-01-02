@@ -24,7 +24,7 @@ Informations autour de la soutenance de fin d'étude
 ## Critères oraux et coefficients
 
 * Qualité / Expression orale
-[//]: <> (Coeff 2)
+[//]: # (Coeff 2)
     * Comportement global
         * Maîtrise de soi
         * de la voix
@@ -45,13 +45,13 @@ Informations autour de la soutenance de fin d'étude
         * Pouvoir de conviction
         * Acceptation du message
 * Qualité présentation : tenue, slides, supp. papier
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 * Logique présentation : plan
-[//]: <> (Coeff 2)
+[//]: # (Coeff 2)
 * Respect du temps
-[//]: <> (Coeff 1)
+[//]: # (Coeff 1)
 * Contenu scientifique et technique
-[//]: <> (Coeff 3)
+[//]: # (Coeff 3)
     * Démarche intellectuelle
     * Contenu du sujet
         * Maîtrise générale
@@ -59,17 +59,17 @@ Informations autour de la soutenance de fin d'étude
         * Critères de choix
         * Aboutissement
 * Mise en évidence valeur ajoutée
-[//]: <> (Coeff 3)
+[//]: # (Coeff 3)
     * Valeure créée
     * Valeure apportée
     * ...par l'étudiant à l'entreprise durant son stage
 * Réponse aux questions
-[//]: <> (Coeff 3)
+[//]: # (Coeff 3)
     * Compréhension des questions
     * Pertinence des réponses
     * Préparation
 * Anglais oral
-[//]: <> (Coeff 3)
+[//]: # (Coeff 3)
 
 ## Tasks list
 
