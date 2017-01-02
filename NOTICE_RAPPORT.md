@@ -32,8 +32,7 @@ d'étude sont regroupées ici.
     * Présentation du stage
         * Rappel du sujet du stage et des finalités de celui-ci (__15 lignes min__)
     * Le stagiaire et le stage
-        * Etat de connaissances sur le sujet (experiences à
-        l'ANSSI)
+        * Etat de connaissances sur le sujet
         * Rapport avec le cursus EPITA
         * Ce que le stage peut m'apporter, les motivations
     * Contexte de travail
@@ -102,14 +101,25 @@ Focalisation sur la démarche d'ingénieur
 
 ## Critères du rapport et coefficients
 
-* Résume                            - Coeff 2
-* Qualité doc / Présentation        - Coeff 1
-* Qualité doc / Ortho. Grammaire    - Coeff 1
-* Respect du plan                   - Coeff 1
-* Aspects organisationnels          - Coeff 3
-* Contenu scientifique et technique - Coeff 4
-* Analyse et conclusion             - Coeff 2
-* Index / Gloss / Bibli / Annexes   - Coeff 1
+Les coefficients sont en commentaire et non visibles via cette plateforme, à
+moins que...
+
+* Résume
+[//]: <> (Coeff 2)
+* Qualité doc / Présentation
+[//]: <> (Coeff 1)
+* Qualité doc / Ortho. Grammaire
+[//]: <> (Coeff 1)
+* Respect du plan
+[//]: <> (Coeff 1)
+* Aspects organisationnels
+[//]: <> (Coeff 3)
+* Contenu scientifique et technique
+[//]: <> (Coeff 4)
+* Analyse et conclusion
+[//]: <> (Coeff 2)
+* Index / Gloss / Bibli / Annexes
+[//]: <> (Coeff 1)
 
 ## Tasks list
 
